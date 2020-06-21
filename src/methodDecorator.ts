@@ -1,10 +1,10 @@
-function log(_: any, key: string, value: any) {
+function log(_: any, key: string, propertyDescriptor: any) {
+  const originalMethod = propertyDescriptor.value;
   return {
     value: function(...args: any[]) {
       const a = args.map(a => JSON.stringify(a)).join();
-      const result = value.value.apply(this, args);
-      const r = JSON.stringify(result);
-      console.log(`Call: ${key}(${a}) => ${r}`);
+      const result = originalMethod.apply(this, args);
+      console.log(`Call: ${key}(${a}) => ${JSON.stringify(result)}`);
       return result;
     },
   };
@@ -12,7 +12,7 @@ function log(_: any, key: string, value: any) {
 
 export class MethodDecorator {
   @log
-  double(n: number) {
-    return n * 2;
+  double(input: number) {
+    return input * 2;
   }
 }
