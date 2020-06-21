@@ -1,6 +1,6 @@
 import { MethodDecorator } from '../src/methodDecorator';
 
-describe('blah', () => {
+describe('method decorator', () => {
   it('works', () => {
     const methodDecorator = new MethodDecorator();
 
