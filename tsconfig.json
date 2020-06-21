@@ -21,6 +21,7 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "baseUrl": "./",
     "paths": {
       "*": ["src/*", "node_modules/*"]
