@@ -1,3 +1,5 @@
+http://blog.wolksoftware.com/decorators-metadata-reflection-in-typescript-from-novice-to-expert-part-3
+
 # TSDX Bootstrap
 
 This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).

@@ -39,6 +39,7 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.8.0"
   }
 }
