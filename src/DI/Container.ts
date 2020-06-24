@@ -26,7 +26,7 @@ export class Container {
       service
     );
 
-    const initializedParams = servicesToInitialized.map(service => {
+    const initializedParams = servicesToInitialized.map((service: any) => {
       if (this.services.includes(service)) {
         return this.getServiceValue(service);
       }
